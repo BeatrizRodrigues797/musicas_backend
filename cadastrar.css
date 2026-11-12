@@ -4,28 +4,39 @@
 
 body {
     margin: 0;
-    padding: 24px 16px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f5fa;
+    background-color: #f5f5f8;
     color: #222;
 }
 
 main {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 32px auto;
+    padding: 24px;
+    background-color: #fff;
+    border-top: 6px solid #6c4ad0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-.voltar {
-    display: inline-block;
-    margin-bottom: 12px;
-    color: #5b5bd6;
-    font-weight: bold;
+main > a {
+    color: #6c4ad0;
     font-size: 14px;
+    text-decoration: none;
+}
+
+main > a:hover {
+    text-decoration: underline;
 }
 
 h1 {
-    margin: 0 0 20px 0;
-    font-size: 28px;
+    margin: 16px 0 24px 0;
+    font-size: 26px;
+    color: #6c4ad0;
+}
+
+main > div {
+    margin-bottom: 16px;
 }
 
 label {
@@ -38,36 +49,34 @@ label {
 input {
     display: block;
     width: 100%;
-    margin-bottom: 18px;
     padding: 10px 12px;
-    border: 1px solid #bbb;
-    border-radius: 6px;
-    background-color: #fff;
-    font-size: 15px;
+    font-size: 16px;
     font-family: inherit;
+    border: 1px solid #ccc;
+    border-radius: 6px;
 }
 
 input:focus {
     outline: none;
-    border-color: #5b5bd6;
-    box-shadow: 0 0 0 2px rgba(91, 91, 214, 0.25);
+    border-color: #6c4ad0;
+    box-shadow: 0 0 0 3px rgba(108, 74, 208, 0.2);
 }
 
-#botaoCadastrar {
+button {
     display: block;
     width: 100%;
-    margin-top: 6px;
-    padding: 13px;
-    border: none;
-    border-radius: 6px;
-    background-color: #5b5bd6;
-    color: #fff;
-    font-size: 15px;
+    margin-top: 24px;
+    padding: 12px;
+    font-size: 16px;
     font-weight: bold;
     font-family: inherit;
+    color: #fff;
+    background-color: #6c4ad0;
+    border: none;
+    border-radius: 6px;
     cursor: pointer;
 }
 
-#botaoCadastrar:hover {
-    background-color: #4a4ac0;
+button:hover {
+    background-color: #5738b0;
 }

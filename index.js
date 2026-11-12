@@ -9,17 +9,17 @@ async function buscarMusicas() {
 
     musicas.forEach((musica) => {
         listaMusicas.innerHTML += `
-            <div class="card">
-                <h3>${musica.titulo}</h3>
-                <p>Artista: ${musica.artista}</p>
-                <p>Gênero: ${musica.genero}</p>
-                <p>Ano: ${musica.ano}</p>
-                <p>Duração: ${musica.duracao}</p>
-
-                <a href="editar.html?id=${musica.id}">Editar</a>
-            </div>
-        `;
-    });
+            <article class="musica">
+                <h2>${musica.titulo}</h2>
+                <p class="artista">${musica.artista}</p>
+                <p class="detalhes">${musica.genero} | ${musica.ano} | ${musica.duracao} min</p>
+                <div class="acoes">
+                    <a class="editar" href="editar.html?id=${musica.id}">Editar</a>
+                    <button class="apagar">Apagar</button>
+                </div>
+            </article>
+        `
+    })
 }
 
 buscarMusicas();

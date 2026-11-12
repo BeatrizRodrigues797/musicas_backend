@@ -4,25 +4,20 @@
 
 body {
     margin: 0;
-    padding: 24px 16px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f5fa;
+    background-color: #f5f5f8;
     color: #222;
-}
-
-header,
-main {
-    max-width: 600px;
-    margin: 0 auto;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 16px;
-    border-bottom: 3px solid #5b5bd6;
-    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px 32px;
+    background-color: #6c4ad0;
+    color: #fff;
 }
 
 header h1 {
@@ -31,9 +26,22 @@ header h1 {
 }
 
 header a {
-    color: #5b5bd6;
+    padding: 10px 18px;
+    background-color: #fff;
+    color: #6c4ad0;
     font-weight: bold;
-    font-size: 14px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+header a:hover {
+    background-color: #ece6fb;
+}
+
+main {
+    max-width: 700px;
+    margin: 32px auto;
+    padding: 0 16px;
 }
 
 #listaMusicas {
@@ -43,25 +51,28 @@ header a {
 }
 
 .musica {
+    padding: 20px;
     background-color: #fff;
-    border: 1px solid #ddd;
+    border-left: 6px solid #6c4ad0;
     border-radius: 8px;
-    padding: 16px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .musica h2 {
     margin: 0 0 6px 0;
     font-size: 22px;
+    color: #6c4ad0;
 }
 
 .artista {
-    margin: 0 0 6px 0;
+    margin: 0 0 4px 0;
     font-size: 16px;
+    font-weight: bold;
 }
 
 .detalhes {
-    margin: 0 0 14px 0;
-    font-size: 13px;
+    margin: 0 0 16px 0;
+    font-size: 14px;
     color: #666;
 }
 
@@ -72,32 +83,30 @@ header a {
 
 .editar,
 .apagar {
-    padding: 7px 18px;
-    border-radius: 6px;
-    background-color: #fff;
+    padding: 8px 16px;
     font-size: 14px;
-    font-weight: bold;
     font-family: inherit;
+    border-radius: 6px;
     cursor: pointer;
     text-decoration: none;
 }
 
 .editar {
-    border: 2px solid #5b5bd6;
-    color: #5b5bd6;
-}
-
-.apagar {
-    border: 2px solid #c0392b;
-    color: #c0392b;
+    background-color: #6c4ad0;
+    color: #fff;
+    border: 1px solid #6c4ad0;
 }
 
 .editar:hover {
-    background-color: #5b5bd6;
-    color: #fff;
+    background-color: #5738b0;
+}
+
+.apagar {
+    background-color: #fff;
+    color: #c62828;
+    border: 1px solid #c62828;
 }
 
 .apagar:hover {
-    background-color: #c0392b;
-    color: #fff;
+    background-color: #fdeaea;
 }
